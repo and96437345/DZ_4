@@ -1,0 +1,65 @@
+body {
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    background-color: #eee;
+}
+
+.main {
+    position: absolute;
+    width: 400px;
+    height: 130px;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+p {
+    text-align: center;
+    margin: 55px;
+}
+
+.left-door {
+    position: absolute;
+    width: 200px;
+    height: 130px;
+    background-color: #792657;
+    border: 3px solid #2f0e22;
+    left: -200px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.right-door {
+    position: absolute;
+    width: 200px;
+    height: 130px;
+    background-color: #792657;
+    border: 3px solid #2f0e22;
+    left: 200px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+.main:hover .left-door {
+    right: 20px;
+    transform: perspective(200px) rotateY(30deg) scale(.8);
+    transition-timing-function: ease-in;
+    transition: 2s;
+
+}
+
+.main:hover .right-door {
+    right: -20px;
+    transform: perspective(200px) rotateY(-30deg) scale(.8);
+    transition-timing-function: ease-in;
+    transition: 2s;
+}
